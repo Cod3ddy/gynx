@@ -25,8 +25,25 @@ No trash bin. No undo. Just gone.
 Mulonda sits between you and your shell's commands. Before anything runs, it stops and asks:
 
 ```
-mulonda: rm -rf ./dist
-   Proceed? [y/N] 
+touch /tmp/demo-file
+```
+
+```
+go run . chmod 777 /tmp/demo-file
+```
+
+You'll get:
+```
+mulonda: chmod 777 /tmp/demo-file
+warning: Setting world-writable permissions
+Proceed? [y/N]: y
+```
+
+the output for `y` ofcourse will just be whatever cmd result that binary that went through gives you, but for the `N` option, you'll be presented this:
+
+```
+aborted: command not executed
+exit status 1
 ```
 
 It works via shell aliases &mdash; no daemon, no background process, no kernel magic. Just a fast Go binary that intercepts, prompts, then passes through to the real command if you confirm.

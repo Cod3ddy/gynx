@@ -69,4 +69,4 @@ mulonda uninstall        # remove all aliases
 - If it's cp or overwriting a file, show them diffs? or ask them if they meant to rewrite file `x` to `y` 
 
 
-Please remember be reminded, this is still in development, you might sometimes not get the desired outcome.
+Please be reminded, this is still in development, you might sometimes not get the desired outcome.

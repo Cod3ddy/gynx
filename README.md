@@ -4,7 +4,7 @@
 
 > *Mulonda &mdash; from Tonga (Malawi), meaning "a guard."*
 
-A small  tool that intercepts destructive shell commands and asks you before execution.
+A small  tool that intercepts shell commands and asks you before execution.
 
 
 ## The Problem
@@ -22,7 +22,7 @@ No trash bin. No undo. Just gone.
 
 ## What Mulonda Does
 
-Mulonda sits between you and your shell's most dangerous commands. Before anything destructive runs, it stops and asks:
+Mulonda sits between you and your shell's commands. Before anything runs, it stops and asks:
 
 ```
 mulonda: rm -rf ./dist

@@ -13,3 +13,5 @@ bin/
 *.a
 *.out
 *.test
+
+dist

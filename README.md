@@ -4,8 +4,6 @@
 
 ![Gynx Logo](docs/gynx-logo.svg)
 
-> *Gynx &mdash; from Tonga (Malawi), meaning "a guard."*
-
 A small  tool that intercepts shell commands and asks you before execution.
 
 

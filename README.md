@@ -1,10 +1,10 @@
 ⚠This is work in pogress
 
-# mulonda
+# gynx
 
-![Mulonda Logo](docs/mulonda-logo.svg)
+![Gynx Logo](docs/gynx-logo.svg)
 
-> *Mulonda &mdash; from Tonga (Malawi), meaning "a guard."*
+> *Gynx &mdash; from Tonga (Malawi), meaning "a guard."*
 
 A small  tool that intercepts shell commands and asks you before execution.
 
@@ -22,9 +22,9 @@ cp -r src/ backup/         # clobbers your backup, no warning
 No trash bin. No undo. Just gone.
 
 
-## What Mulonda Does
+## What Gynx Does
 
-Mulonda sits between you and your shell's commands. Before anything runs, it stops and asks:
+Gynx sits between you and your shell's commands. Before anything runs, it stops and asks:
 
 ```
 touch /tmp/demo-file
@@ -36,7 +36,7 @@ go run . chmod 777 /tmp/demo-file
 
 You'll get:
 ```
-mulonda: chmod 777 /tmp/demo-file
+gynx: chmod 777 /tmp/demo-file
 warning: Setting world-writable permissions
 Proceed? [y/N]: y
 ```
@@ -55,7 +55,7 @@ Safe commands and non-interactive contexts (scripts, CI pipelines) are passed th
 
 ## Watchlist
 
-Mulonda ships with somewhat sensible defaults (`rm`, `mv`, `cp` and more to be added soon). Users will be able to add or remove some rules a YAML watchlist:
+Gynx ships with somewhat sensible defaults (`rm`, `mv`, `cp` and more to be added soon). Users will be able to add or remove some rules a YAML watchlist:
 
 ```yaml
 rules:
@@ -72,11 +72,11 @@ rules:
 ## Usage
 
 ```bash
-mulonda install          # inject aliases into your shell
-mulonda add "chmod"      # add a command to your watchlist
-mulonda remove "chmod"   # remove a command
-mulonda list             # show active rules
-mulonda uninstall        # remove all aliases
+gynx install          # inject aliases into your shell
+gynx add "chmod"      # add a command to your watchlist
+gynx remove "chmod"   # remove a command
+gynx list             # show active rules
+gynx uninstall        # remove all aliases
 ```
 
 ## Future Plans
